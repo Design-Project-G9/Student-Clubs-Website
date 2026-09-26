@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./output.css" rel="stylesheet">
+
+    <title>Student Club Website</title>
+</head>
+
+<body class="bg-white text-gray-700">
+
+    <header
+        class="sticky top-0 z-50 px-4 sm:px-8 md:px-16 py-4 bg-[#111827]/90 backdrop-blur-md border-b border-white/10">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center gap-3 group shrink-0">
+                <div
+                    class="w-10 h-10 rounded-full bg-linear-to-br from-[#FFA500] to-indigo-500 p-0.5 transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
+                    <img class="w-9 h-9 rounded-full object-cover" src="./image/website-logo.jpg"
+                        alt="Student Club Logo">
+                </div>
+                <h3 class="font-bold text-xl sm:text-2xl text-white tracking-wide">
+                    Student <span class="text-blue-500">Clubs</span>
+                </h3>
+            </a>
+
+            <input type="checkbox" id="menu-toggle" class="peer hidden">
+            <label for="menu-toggle" class="sm:hidden cursor-pointer text-gray-300 hover:text-white p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </label>
+
+            <ul
+                class="peer-checked:flex hidden flex-col sm:flex sm:flex-row gap-2 sm:gap-6 lg:gap-8 items-center absolute sm:relative top-full left-0 w-full sm:w-auto bg-[#111827] sm:bg-transparent p-6 sm:p-0 border-b border-white/10 sm:border-none shadow-2xl sm:shadow-none transition-all duration-300 z-50">
+                <li class="relative group py-2">
+                    <a href="index.html"
+                        class="text-white font-medium text-[16px] transition-colors duration-300">Home</a>
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-0.5 bg-[#FFA500] rounded-full shadow-[0_0_8px_#FFA500]"></span>
+                </li>
+
+                <li class="relative group py-2">
+                    <a href="clubs.html"
+                        class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300">Clubs</a>
+                    <span
+                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"></span>
+                </li>
+
+                <li class="relative group py-2">
+                    <a href="events.html"
+                        class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300">Events</a>
+                    <span
+                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"></span>
+                </li>
+
+                <li class="relative group py-2">
+                    <a href="about.html"
+                        class="text-gray-400 group-hover:text-white font-medium text-[16px] transition-colors duration-300">About</a>
+                    <span
+                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-[#FFA500] rounded-full transition-all duration-300 ease-out group-hover:w-full shadow-[0_0_8px_#FFA500]"></span>
+                </li>
+            </ul>
+
+
+            <div class="hidden sm:flex items-center gap-4 shrink-0">
+                <div class="hidden lg:block relative w-40 md:w-52 lg:w-64">
+                    <input type="text" placeholder="Search..."
+                        class="w-full px-4 py-2 pr-9 text-xs sm:text-sm text-gray-200 bg-[#161b22] rounded-full border border-gray-700/60 outline-none transition-all duration-300 placeholder:text-gray-500 focus:border-[#FFA500] focus:ring-1 focus:ring-[#FFA500]/40 focus:shadow-[0_0_12px_rgba(255,165,0,0.3)]">
+                    <span class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </span>
+                </div>
+
+                <a href="#contact"
+                    class="inline-flex items-center gap-2 bg-linear-to-br from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-semibold text-[15px] px-5 py-2 rounded-full shadow-[0_0_15px_rgba(255,165,0,0.3)] transition-all duration-300 hover:scale-105 active:scale-95">
+                    Join Now &rarr;
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="w-full h-[350px] overflow-hidden">
+
+
+        <img src="./image/benner-about.png" alt="Students" class="w-full h-full object-cover" />
+    </section>
+    <main class="bg-gray-50">
+        <div class="max-w-6xl mx-auto px-5 py-6 lg:px-8 lg:py-7">
+            <div class="grid grid-cols-1 lg:grid-cols-[1.45fr_1fr] gap-6">
+                <section class="bg-white/50 rounded-xl p-2 lg:p-0">
+                    <div class="relative">
+
+                        <img src="./image/our-story.png" alt="Students studying together"
+                            class="w-full h-[260px] object-cover rounded-xl" />
+                        <div
+                            class="absolute left-5 -bottom-5 w-12 h-12 bg-white rounded-full shadow-md flex items-center justify-center overflow-hidden">
+
+                            <img src="./image/website-logo.jpg" alt="Logo" class="w-10 h-10 object-contain" />
+                        </div>
+                    </div>
+
+                    <div class="mt-8 px-2 lg:px-0">
+                        <h1 class="text-2xl font-bold text-gray-800">
+                            Our Story
+                        </h1>
+
+                        <p class="text-[12px] leading-5 text-gray-500 max-w-xl font-Inter">
+                            The Student Club platform was created to bridgethe gap between <br>
+                            passion and community. From small,self-organized meetups to <br>
+                            university-wide events,we empower students to connect and create <br>
+                            something incredible together.
+                        </p>
+                    </div>
+                    <div class="mt-4 px-2 lg:px-0">
+
+                        <h2 class="text-base font-bold text-gray-800 mb-2">
+                            Our Mission
+                        </h2>
+
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+
+                                <div
+                                    class="w-3 h-3 rounded-full border border-purple-500 flex items-center justify-center">
+                                    <span class="text-purple-500 text-[8px]">
+                                        ✓
+                                    </span>
+                                </div>
+
+                                <p class="text-[12px] text-gray-500">
+                                    Foster peer-to-peer learning
+                                </p>
+
+                            </div>
+
+                            <div class="flex items-center gap-2">
+
+                                <div
+                                    class="w-3 h-3 rounded-full border border-purple-500 flex items-center justify-center">
+                                    <span class="text-purple-500 text-[8px]">
+                                        ✓
+                                    </span>
+                                </div>
+
+                                <p class="text-[10px] text-gray-500">
+                                    Build lasting student communities
+                                </p>
+
+                            </div>
+                            <div class="flex items-center gap-2">
+
+                                <div
+                                    class="w-3 h-3 rounded-full border border-purple-500 flex items-center justify-center">
+                                    <span class="text-purple-500 text-[8px]">
+                                        ✓
+                                    </span>
+                                </div>
+                                <p class="text-[10px] text-gray-500">
+                                    Organize impactful student events
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-2">
+
+                                <div
+                                    class="w-3 h-3 rounded-full border border-purple-500 flex items-center justify-center">
+                                    <span class="text-purple-500 text-[8px]">
+                                        ✓
+                                    </span>
+                                </div>
+                                <p class="text-[10px] text-gray-500">
+                                    Develop student leadership skills
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white/45 border border-gray-300/70 rounded-xl p-5">
+                    <div class="mb-4">
+
+                        <h2 class="text-xl font-bold text-gray-800">
+                            Contact Us
+                            <form
+                                action=""
+                                method="post" name="Contact"></form>
+                        </h2>
+
+                        <p class="text-[12px] text-gray-500 mt-1">
+                            Have a question? We're here to help.
+                        </p>
+                    </div>
+
+                    <form class="space-y-3">
+                        <div>
+                            <label for="name" class="block text-[12px] font-Inter text-gray-700 mb-1">
+                                Your Name*
+                            </label>
+                            <input id="name" type="text" placeholder="Enter your full name"
+                                class="w-full h-8 px-3 text-[11px] rounded-sm border border-gray-400 bg-white/40 outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-300" />
+
+                        </div>
+                        <div>
+
+                            <label for="email" class="block text-[12px] font-semibold text-gray-700 mb-1">
+                                Your Email*
+                            </label>
+
+                            <input id="email" type="email" placeholder="Enter your Email"
+                                class="w-full h-8 px-3 text-[11px] rounded-sm border border-gray-400 bg-white/40 outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-300" />
+
+                        </div>
+                        <div>
+
+                            <label for="subject" class="block text-[12px] font-semibold text-gray-700 mb-1">
+                                Subject*
+                            </label>
+                            <select id="subject"
+                                class=" w-full h-8 px-3 text-[11px] rounded-sm border border-gray-400 bg-white/40 outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-300">
+                                <option>
+                                    Select your year
+                                </option>
+                                <option>
+                                    First Year
+                                </option>
+                                <option>
+                                    Second Year
+                                </option>
+                                <option>
+                                    Third Year
+                                </option>
+                            </select>
+                            <div>
+                                <label for="club" class="block text-[12px] font-semibold text-gray-700 mb-1">
+                                    Select a Club
+                                </label>
+
+                                <div class="">
+                                    <select id="club" name="club"
+                                        class="w-full h-8 px-3 text-[11px] rounded-sm border border-gray-400 bg-white/40 outline-none focus:border-purple-500 focus:ring-1 focus:ring-purple-300">
+                                        <option value="" disabled selected>Choose a club...</option>
+                                        <option value="sport_club">Only Student</option>
+                                        <option value="sport_club">Sport Club</option>
+                                        <option value="cooking_club">Cooking Club</option>
+                                        <option value="aerobic_club">Aerobic Club</option>
+                                        <option value="sa_club">SA Club</option>
+                                    </select>
+                                    <div
+                                        class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-500">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <label for="message" class="block text-[12px] font-semibold text-gray-700 mb-1">
+                                Message*
+                            </label>
+                            <textarea id="message" rows="4" placeholder="Tell us why you want to join this club..."
+                                class="w-full px-3 py-2 text-[11px] rounded-sm border border-gray-400 bg-white/40 outline-none resize-none focus:border-purple-500 focus:ring-1 focus:ring-purple-300"></textarea>
+
+                        </div>
+                        <button type="submit"
+                            class="w-full h-7 rounded-full bg-gradient-to-r from-purple-600 to-purple-500 text-white text-[11px] font-medium hover:from-purple-700 hover:to-purple-600 transition duration-200">
+                            <a href=" https://t.me/+QmoGET47nPxhYThl"></a>
+                            Submit
+                        </button>
+                    </form>
+
+                    <div class="mt-4 space-y-2">
+                        <div class="flex items-center gap-2">
+                            <span class="text-purple-600 text-sm">
+                                ✉
+                            </span>
+                            <span class="text-[11px] text-gray-600 font-bold">
+                                sveanvichaka5@gmail.com
+                            </span>
+                        </div>
+
+                        <div class="flex items-center gap-2">
+                            <span class="text-purple-600 text-xs">
+                                ☎
+                            </span>
+                            <span class="text-[11px] text-gray-600 font-bold">
+                                (+855) 97 38 89 510/ 088 86 46 216
+                            </span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-purple-600 text-sm ml-1">
+                                ◉
+                            </span>
+                            <span class="text-[11px] text-gray-600 font-bold ">
+                                passerelles numériques cambodia
+                            </span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="bg-[#111827] text-white py-12 px-6 md:px-16 border-t border-gray-800">
+            <div class="max-w-7xl mx-auto flex flex-row md:flex-row items-center justify-between gap-8">
+
+
+                <div class="flex items-center gap-3 ">
+                    <div
+                        class="w-11 h-11 rounded-full bg-linear-to-br from-[#FFA500] to-indigo-500 p-0.5 transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
+                        <img class="w-10 h-10 rounded-full object-cover" src="./image/website-logo.jpg"
+                            alt="Student Club Logo">
+                    </div>
+                    <h3 class="font-bold text-xl sm:text-2xl text-white">
+                        Student <span class="text-[#4C4DFF]">Clubs</span>
+                    </h3>
+                </div>
+
+                <ul class="hidden sm:flex flex-wrap justify-center items-center gap-4 text-sm text-gray-300">
+                    <li><a href="index.html" class="hover:text-[#FFA500] transition">Home</a></li>
+                    <li><a href="clubs.html" class="hover:text-[#FFA500] transition">Clubs</a></li>
+                    <li><a href="events.html" class="hover:text-[#FFA500] transition">Events</a></li>
+                    <li><a href="about.html" class="hover:text-[#FFA500] transition">About</a></li>
+                </ul>
+
+
+                <div class="flex items-center gap-4 text-gray-400">
+
+                    <a href="#" class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                        </svg>
+                    </a>
+
+                    <a href="#" class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+
+                    <a href="#" class="hover:text-[#FFA500] transition p-2 bg-gray-800 rounded-full">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.195 1.006.128.832.941z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex  mt-8 pt-6 border-t border-gray-800  text-xs text-gray-500">
+                <p class="flex-1 ">&copy; 2026 Student Club Website. All rights reserved.</p>
+                <p class="flex-1 text-end">Privacy Policy | Term of Service </p>
+            </div>
+        </footer>
+</body>
