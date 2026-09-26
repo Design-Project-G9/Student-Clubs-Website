@@ -110,7 +110,8 @@
                     </div>
 
                     <div class="mt-8 px-2 lg:px-0">
-                        <h1 class="font-['Poppins',sans-serif] text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
+                        <h1
+                            class="font-['Poppins',sans-serif] text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
                             Our Story
                         </h1>
                         <p class="mt-3 text-base sm:text-lg leading-relaxed text-gray-600 max-w-xl">
@@ -121,7 +122,8 @@
                     </div>
 
                     <div class="mt-6 px-2 lg:px-0">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-gray-800 mb-3">Our Mission</h2>
+                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-gray-800 mb-3">Our
+                            Mission</h2>
                         <div class="space-y-2.5">
                             <div class="flex items-center gap-2.5">
                                 <div
@@ -158,14 +160,15 @@
                 <!-- Contact Us Section -->
                 <section id="contact" class="bg-white/80 border border-gray-200/80 rounded-xl p-6 shadow-sm">
                     <div class="mb-5">
-                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-gray-800">Contact Us</h2>
+                        <h2 class="font-['Poppins',sans-serif] text-2xl sm:text-3xl font-bold text-gray-800">Contact Us
+                        </h2>
                         <p class="text-sm text-gray-500 mt-1">Have a question? We're here to help.</p>
                     </div>
 
-                    <form action="#" method="post" name="Contact" class="space-y-4">
+                    <form action="#" method="post" name="Contact" id="about-contact-form" class="space-y-4">
                         <div>
                             <label for="name" class="block text-xs font-semibold text-gray-700 mb-1">Your Name*</label>
-                            <input id="name" type="text" placeholder="Enter your full name"
+                            <input id="name" name="name" type="text" placeholder="Enter your full name"
                                 class="w-full h-9 px-3 text-xs rounded-md border border-gray-300 bg-white outline-none transition-all focus:border-purple-500 focus:ring-2 focus:ring-purple-200"
                                 required />
                         </div>
@@ -173,34 +176,35 @@
                         <div>
                             <label for="email" class="block text-xs font-semibold text-gray-700 mb-1">Your
                                 Email*</label>
-                            <input id="email" type="email" placeholder="Enter your Email"
+                            <input id="email" name="email" type="email" placeholder="Enter your Email"
                                 class="w-full h-9 px-3 text-xs rounded-md border border-gray-300 bg-white outline-none transition-all focus:border-purple-500 focus:ring-2 focus:ring-purple-200"
                                 required />
                         </div>
 
                         <div>
-                            <label for="subject" class="block text-xs font-semibold text-gray-700 mb-1">Subject*</label>
-                            <select id="subject"
+                            <!-- Corrected label from Subject* to Year* -->
+                            <label for="subject" class="block text-xs font-semibold text-gray-700 mb-1">Year*</label>
+                            <select id="subject" name="year" required
                                 class="w-full h-9 px-3 text-xs rounded-md border border-gray-300 bg-white outline-none transition-all focus:border-purple-500 focus:ring-2 focus:ring-purple-200">
                                 <option value="" disabled selected>Select your year</option>
-                                <option value="first_year">First Year</option>
-                                <option value="second_year">Second Year</option>
-                                <option value="third_year">Third Year</option>
+                                <option value="First Year">First Year</option>
+                                <option value="Second Year">Second Year</option>
+                                <option value="Third Year">Third Year</option>
                             </select>
                         </div>
 
                         <div>
                             <label for="club" class="block text-xs font-semibold text-gray-700 mb-1">Select a
-                                Club</label>
+                                Club*</label>
                             <div class="relative">
-                                <select id="club" name="club"
+                                <select id="club" name="club" required
                                     class="w-full h-9 px-3 text-xs rounded-md border border-gray-300 bg-white outline-none transition-all focus:border-purple-500 focus:ring-2 focus:ring-purple-200 appearance-none">
                                     <option value="" disabled selected>Choose a club...</option>
-                                    <option value="only_student">Only Student</option>
-                                    <option value="sport_club">Sport Club</option>
-                                    <option value="cooking_club">Cooking Club</option>
-                                    <option value="aerobic_club">Aerobic Club</option>
-                                    <option value="sa_club">SA Club</option>
+                                    <option value="Only Student">Only Student</option>
+                                    <option value="Sport Club">Sport Club</option>
+                                    <option value="Cooking Club">Cooking Club</option>
+                                    <option value="Aerobic Club">Aerobic Club</option>
+                                    <option value="SA Club">SA Club</option>
                                 </select>
                                 <div
                                     class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-400">
@@ -214,11 +218,13 @@
 
                         <div>
                             <label for="message" class="block text-xs font-semibold text-gray-700 mb-1">Message*</label>
-                            <textarea id="message" rows="4" placeholder="Tell us why you want to join this club..."
-                                class="w-full px-3 py-2 text-xs rounded-md border border-gray-300 bg-white outline-none resize-none transition-all focus:border-purple-500 focus:ring-2 focus:ring-purple-200"></textarea>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell us why you want to join this club..."
+                                class="w-full px-3 py-2 text-xs rounded-md border border-gray-300 bg-white outline-none resize-none transition-all focus:border-purple-500 focus:ring-2 focus:ring-purple-200"
+                                required></textarea>
                         </div>
 
-                        <button type="submit"
+                        <button type="submit" id="about-submit-btn"
                             class="w-full h-9 rounded-full bg-linear-to-r from-purple-600 to-indigo-600 text-white text-xs font-semibold hover:from-purple-700 hover:to-indigo-700 transition duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-400">
                             Submit
                         </button>
@@ -312,6 +318,61 @@
             <p>Privacy Policy | Terms of Service</p>
         </div>
     </footer>
+    <script>
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxe22Q0SEuQoLBh8pnhQegOxmkym8kZ-aitsy6XArC0j_n5noVdtEfR8rVyKJ5O0YMClw/exec";
+
+        const contactForm = document.getElementById('about-contact-form');
+        const submitBtn = document.getElementById('about-submit-btn');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const nameVal = document.getElementById('name').value.trim();
+            const emailVal = document.getElementById('email').value.trim();
+            const yearVal = document.getElementById('subject').value;
+            const clubVal = document.getElementById('club').value;
+            const messageVal = document.getElementById('message').value.trim();
+
+            if (!yearVal || !clubVal) {
+                alert("Please select both a Year and a Club.");
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Submitting...';
+
+            // Order matching your Google Sheet: Name, Email, Club, Year, Message
+            const formData = {
+                name: nameVal,
+                email: emailVal,
+                club: clubVal,
+                year: yearVal,
+                message: messageVal
+            };
+
+            try {
+                const response = await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    body: JSON.stringify(formData),
+                    headers: { 'Content-Type': 'text/plain;charset=utf-8' }
+                });
+
+                const result = await response.json();
+                if (result.result === 'success') {
+                    alert('Submitted successfully!');
+                    contactForm.reset();
+                } else {
+                    alert('Error submitting form: ' + result.error);
+                }
+            } catch (err) {
+                console.error('Submission failed', err);
+                alert('Submission failed. Please try again.');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Submit';
+            }
+        });
+    </script>
 </body>
 
 </html>
